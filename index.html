@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Attendance Management System</title>
+</head>
+<body>
+    <header>
+        <h1>Attendance Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#submit-request">Submit Attendance Request</a></li>
+                <li><a href="#status">Check Status</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="submit-request">
+            <h2>Submit Attendance Request</h2>
+            <form id="attendance-form">
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                
+                <label for="event">Event Participation:</label>
+                <input type="text" id="event" placeholder="Describe your event" required>
+                
+                <label for="proof">Proof of Participation (link):</label>
+                <input type="url" id="proof" placeholder="e.g., Google Drive, YouTube" required>
+                
+                <button type="submit">Submit Request</button>
+            </form>
+            <div id="response-message"></div>
+        </section>
+
+        <section id="status">
+            <h2>Check Attendance Status</h2>
+            <form id="status-form">
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" placeholder="Enter your Student ID" required>
+                
+                <button type="submit">Check Status</button>
+            </form>
+            <div id="status-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Attendance Management System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
